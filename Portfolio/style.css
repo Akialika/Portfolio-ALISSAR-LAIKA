@@ -1,0 +1,209 @@
+*{
+  font-family: 'oswald', sans-serif;
+ 	color:white;
+ 	text-decoration:none;
+  height: auto; 
+	max-width: 100%;
+	max-height: 100%;
+}
+h1, h2, .logo{
+	position:fixed;
+  font-size:100%;
+}
+h1,h2{ 
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	position:absolute;
+	right:0;
+	margin-right:2%;
+}
+ .logo{
+	max-width: 100%;
+	max-height: 100%;
+  width: 3%;
+  height: auto;
+  margin-left:3%;
+} 
+.leftSide a{
+  	color: white; 
+  	text-decoration: none;
+
+}
+.listMenu li{
+  color: #ffffff;
+  text-align:left;
+	list-style-type:none;
+  padding-top:5%;
+  font-size:70%;
+
+}
+.listMenu{
+	position:absolute;
+	bottom:0;
+}
+
+.leftSide, .rightSide{
+	height:50vh;
+	width:100%;
+}
+li{
+margin: 1em 0;
+}
+p{
+  text-align:justify;
+  padding:5%;
+  font-size:80%;
+}
+@media screen and (min-width:768px)
+{
+	.leftSide, .rightSide{
+		height:100vh;
+	}
+}
+
+.leftSide{
+	background-color:#121212;
+  font-size:250%;
+  padding-top:2%;
+}
+.rightSide{
+	background: url(ImagePortfolio.gif) no-repeat right center fixed; 
+	background-color:#070611;
+  -webkit-background-size: 50%;
+  -moz-background-size: 50%;
+  -o-background-size: 50%;
+  background-size: 50%;
+}
+a{
+	list-style-type:none !important;
+	text-decoration:none !important;
+}
+a:hover{
+	color:#a02d2d !important;
+}
+
+.projetEtudiant {
+	background-color:transparent;
+	border:none;
+}
+.projetEtudiant:hover{
+	color:#a02d2d;
+}
+
+.etudes {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.etudesContenus {
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  background-color: #555;
+  min-width: 180px;
+  min-height: 630%;
+  border-radius:6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  left:110%;
+  top:0%;
+  z-index: 1;
+}
+/*la flèche */
+.etudes .etudesContenus::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.etudesContenus a {
+  color: black;
+  padding: 12px 16px;
+  font-size:"";
+  text-decoration: none;
+  display: block;
+  border-radius:6px;
+}
+
+.etudesContenus a:hover {background-color: #ddd;}
+
+/* Toggle this class - hide and show the popup */
+.etudes .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+.aPropos2 {
+  background-color:transparent;
+  border:none;
+}
+
+.aPropos2:hover{
+  color:#a02d2d;
+}
+
+.aPropos {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.aProposContenu {
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  background-color: #555;
+  min-width: 600px;
+  min-height: 85vh;
+  border-radius:6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  left:110%;
+  bottom:0%;
+  z-index: 1;
+}
+/*la flèche */
+.aPropos .aProposContenu::after {
+  content: "";
+  position: absolute;
+  bottom: 2%;
+  left: 0%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.aProposContenu a {
+  color: black;
+  padding: 12px 16px;
+  font-size:"";
+  text-decoration: none;
+  display: block;
+  border-radius:6px;
+}
+
+.aProposContenu a:hover {background-color: #ddd;}
+
+/* Toggle this class - hide and show the popup */
+.aPropos .show2 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}

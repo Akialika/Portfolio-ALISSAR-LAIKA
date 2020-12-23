@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Animation.css">
+<title>A.L</title>
+ </head>
+
+ <body>
+ 	<h1>ANIMATION ALISSAR LAIKA</h1>
+ 	<header class="header">
+ 		<div class="goBack"></div>
+ 		<nav class="topNav">
+ 		<div class="links">
+ 			<a href="menu.html">Menu</a>
+ 		 	<div class="Titre">ANIMATION</div>
+ 		 	<div class="contact">
+ 			<div class="contactEcrit" onclick="myFunction()">Contact</div>
+				<div class="contactContenu" id="myPopup">
+					<a href="mailto:alissar.laika.pro@gmail.com"><img src='Images/icon/mailIcon.png'></a>
+					<a href="https://www.instagram.com/akial_art/" target="_blank"><img src='Images/icon/instaIcon.png'></a>
+					<a href="https://www.linkedin.com/in/alissar-laika-8946b3200/" target="_blank"><img src='Images/icon/linkedinIcon.png'></a>
+			</div>
+ 		</div>
+ 	</div>
+ 	</nav>
+ 	</header>
+<div class="Animation">
+	<div class="courir"><img class="Images" src='Images/Animation/courir.png' onmouseover="this.src='Images/Animation/courir.gif';" onmouseout="this.src='Images/Animation/courir.png';" /></div>
+
+	<div class="miseEnScene">
+		<img class="Images" src='Images/Animation/miseEnScene.png' onmouseover="this.src='Images/Animation/miseEnScene.gif';" onmouseout="this.src='Images/Animation/miseEnScene.png';" /></div>
+
+	<div class="logoGif">
+		<img class="Images" src='Images/Animation/logo.png' onmouseover="this.src='Images/Animation/logo.gif';" onmouseout="this.src='Images/Animation/logo.png';" /></div>
+
+	<div class="zamanGif">
+		<img class="Images" src='Images/Animation/Zaman_marche.png' onmouseover="this.src='Images/Animation/Zaman_marche.gif';" onmouseout="this.src='Images/Animation/Zaman_marche.png';" /></div>
+
+	<div class="personnagePixel">
+		<img class="Images" src='Images/Animation/personnage.png' onmouseover="this.src='Images/Animation/personnage.gif';" onmouseout="this.src='Images/Animation/personnage.png';" /></div>
+
+	<div class="Ours"><img class="Images" src='Images/Animation/Ours.png' onmouseover="this.src='Images/Animation/Ours.gif';" onmouseout="this.src='Images/Animation/Ours.png';" /></div>
+
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var contact = document.getElementById("myPopup");
+  contact.classList.toggle("show");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="colorisation.css">
+    <title>A.L</title>
+</head>
+
+<body>
+	<header class="header">
+ 		<div class="goBack"></div>
+ 		<nav class="topNav">
+ 		<div class="links">
+ 			<a href="Menu.html">Menu</a>
+ 		 	<div class="Titre">
+ 		 		<span style='color: #e4cfbb'>C</span>
+  				<span style='color: #eab45b'>O</span>
+  				<span style='color: #243e4e'>L</span>
+ 				<span style='color: #7e5b3a'>O</span>
+  				<span style='color: #e4cfbb'>R</span>
+  				<span style='color: #7e5b3a'>I</span>
+				<span style='color: #eab45b'>S</span>
+  				<span style='color: white'>A</span>
+  				<span style='color: #e4cfbb'>T</span>
+  				<span style='color: #a2c794'>I</span>
+  				<span style='color: #7e5b3a'>O</span>
+  				<span style='color: #eab45b'>N</span>
+</div>
+ 			<div class="contact">
+      <div class="contactEcrit" onclick="myFunction()">Contact</div>
+        <div class="contactContenu" id="myPopup">
+          <a href="mailto:alissar.laika.pro@gmail.com"><img src='Images/icon/mailIcon.png'></a>
+          <a href="https://www.instagram.com/akial_art/" target="_blank"><img src='Images/icon/instaIcon.png'></a>
+          <a href="https://www.linkedin.com/in/alissar-laika-8946b3200/" target="_blank"><img src='Images/icon/linkedinIcon.png'></a>
+      </div>
+    </div>
+ 		</div>
+ 	</nav>
+ 	</header>
+<div class="Image1">
+ 	<div class="photoNonColorisé1">
+    <img class="diaporama__image" src="Images/colorisation/RueMouffetard.png"></div>
+ 	<section class="diaporama">
+  
+  <div class="diaporama__conteneur">
+    <img class="diaporama__image" src="Images/colorisation/technique1.png">
+  </div>
+  
+  <div class="diaporama__conteneur">
+    <img class="diaporama__image" src="Images/colorisation/technique2.png">
+  </div>
+  
+  <div class="diaporama__conteneur">
+    <img class="diaporama__image" src="Images/colorisation/technique3.png">
+  </div>
+  
+</section>
+
+  <div class="diaporama__boutons">
+    
+    <ul class="boutons__liste">
+       <li class="boutons__item"><a class="boutons__lien" href="#">•</a></li>
+       <li class="boutons__item"><a class="boutons__lien" href="#">•</a></li>
+       <li class="boutons__item"><a class="boutons__lien" href="#">•</a></li>
+    </ul>
+    
+  </div>
+
+
+<p class="explication"> Dans le cadre de notre cours en Arts des médias, nous avons appris à coloriser manuellement avec Photoshop de trois manières différentes des images en noir et blancs. Vous verrez à votre gauche la photo de Rue Mouffetard fait par Henri Cartier-Bresson colorisé de trois manières différentes (avec des calques de réglage, avec des modifications des couches, avec l'utilisation de courbes de transferts de dégradés) ainsi que Aaron Copland sur une voiture en 1932 colorisé à votre gauche <strong style='color: #b38623'>en mettant votre souris au dessus de l'image </strong>avec la technique qui me semblait la plus efficace, celle avec l'utilisation de courbes de transferts de dégradés.</p>
+
+<div class="AaronCopland"><img class="Images" src='Images/colorisation/AaronCopland.jfif' onmouseover="this.src='Images/colorisation/ImageChoisi.png';" onmouseout="this.src='Images/colorisation/AaronCopland.jfif';" /></div>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var contact = document.getElementById("myPopup");
+  contact.classList.toggle("show");
+}
+</script>
+<script>
+	const selection = document.querySelectorAll('.diaporama__conteneur');
+
+// on créé une liste ou les placer
+let liste_items = [];
+
+// on créé une liste pour se souvenir de leur ordre
+let ordre_items = [];
+
+// on boucle sur notre sélection
+for (var i = 0; i < selection.length; ++i) {
+  // on place les éléments dans la liste d'items
+  liste_items.push( selection[i] );
+  // on renseigne leur ordre de base
+  ordre_items.push( i );
+}
+
+function assigner_ordre () {
+   /* Cette fonction permet d'assigner l'ordre
+   via la propriété data-ordre dans le html */
+   for (var i = 0; i < liste_items.length; ++i) {
+      liste_items[i].setAttribute( 'data-order', ordre_items[i] );
+   }
+}
+
+function mettre_au_debut ( n ) {
+   /* Cette fonction permet de faire remonter l'ordre d'un élément */
+   // si un élément n passe en premier, alors tous les éléments > n descendent d'un cran
+
+   // si notre élément est déjà en 0 rien ne bouge
+   // si n ne correspond pas à un index de la liste
+   if ( ordre_items[n] === 0 || n >= ordre_items.length ) {
+      return;
+   }
+
+   // on regarde la place de tous nos élément dans la liste
+   for (var i = 0; i < ordre_items.length; ++i) {
+
+      // si il sont avant notre élément
+      if ( ordre_items[i] < ordre_items[n] ) {
+
+         // ils reculent d'une place
+         ordre_items[i] += 1;
+      }
+   }
+
+   // notre élément lui passe en 0
+   ordre_items[n] = 0;
+
+   // on met à jour
+   assigner_ordre()
+}
+
+// on met à jour la première fois
+assigner_ordre();
+
+/* ---- */
+
+var liens = document.body.querySelectorAll('.boutons__lien');
+
+for (var i = 0; i < liens.length; ++i) {
+  liens[i].setAttribute('data-ordre-bouton', i);
+  liens[i].addEventListener('click', function ( evenement ) {
+    evenement.preventDefault();
+    mettre_au_debut( evenement.target.getAttribute('data-ordre-bouton') );
+  } );
+}
+
+
+
+function intervalle ( n ) {
+  mettre_au_debut( n );
+  n += 1;
+  setTimeout(function(){
+    intervalle( n >= ordre_items.length ? 0 : n )
+  }, 2000);
+}
+
+intervalle( 0 );
+</script>
+ 	</body>
+</html>

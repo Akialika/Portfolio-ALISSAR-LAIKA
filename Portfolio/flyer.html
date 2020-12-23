@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="flyer.css">
+    <title>A.L</title>
+</head>
+
+<body>
+	<header class="header">
+ 		<div class="goBack"></div>
+ 		<nav class="topNav">
+ 		<div class="links">
+ 			<a href="Menu.html">Menu</a>
+ 		 	<div class="Titre">FLYER</div>
+ 			<div class="contact">
+ 			<div class="contactEcrit" onclick="myFunction()">Contact</div>
+				<div class="contactContenu" id="myPopup">
+					<a href="mailto:alissar.laika.pro@gmail.com"><img src='Images/icon/mailIcon.png'></a>
+					<a href="https://www.instagram.com/akial_art/" target="_blank"><img src='Images/icon/instaIcon.png'></a>
+					<a href="https://www.linkedin.com/in/alissar-laika-8946b3200/" target="_blank"><img src='Images/icon/linkedinIcon.png'></a>
+			</div>
+ 		</div>
+ 		</div>
+ 	</nav>
+ 	</header>
+<div class="flexbox">
+	<div class="sousFlex">
+		<div class="paragraphe"><p>Dans le cadre d'un cours en L1 EVMAN nous
+		devions faire des illustrations qui
+		accompagneraient des poèmes
+		sur une carte d’invitation pour un spectacle.</p>
+		<p>Je suis partie dans un style plutôt
+		simple et enfantin pour que les
+		poèmes aient une sorte de continuité
+		comme un comte pour enfant,
+		j’ai donc choisi des couleurs
+		assez chaudes et fortes.</p>
+		<p>Pour le recto et le verso, j’ai voulu
+		faire un contraste comme nuit et
+		jour afin que l’on puisse voir une
+		sorte une histoire dans le temps
+		qui accentuerait l’effet d’un comte
+		qui permet de lier les poèmes
+		entre eux.</p>
+		<p>Pour ce qui est du processus de
+		chaque illustrations, je commence
+		par faire des petits sketchs, puis
+		je numérise manuellement avec
+		Photoshop. Après ceci, j’ai fait la
+		vectorisation des illustrations et la
+		colorisation ainsi que la mise en
+		page pour séparer les différentes
+		parties sur Illustrator car la carte
+		est censé se plier. </p>
+		</div>
+
+		<div class="flex_images">
+
+			<div class="images">
+			                  <img class="livre" src="Images/flyer/livre2.png">		
+			                  <img class="gugus" src="Images/flyer/gugus2.png">
+			</div>
+		</div>
+	</div>
+
+<div class="zoom1"><img src="Images/flyer/flyer-1.png"></div>
+<div class="zoom2"><img src="Images/flyer/flyer-2.png"></div>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var contact = document.getElementById("myPopup");
+  contact.classList.toggle("show");
+}
+</script>
+ 	</body>
+</html>

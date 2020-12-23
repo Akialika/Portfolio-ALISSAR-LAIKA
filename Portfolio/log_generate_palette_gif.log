@@ -1,0 +1,149 @@
+ffmpeg version 4.3.1-2020-11-08-essentials_build-www.gyan.dev Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 10.2.0 (Rev3, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/aliss/AppData/Local/Temp/KritaFFmpegProgress.yxBVdE'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '14'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'D:/Desktop/Portfolio/Portfolio/tourner%04d.png'.
+Reading option '-vf' ... matched as option 'vf' (set video filters) with argument 'palettegen'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'D:/Desktop/Portfolio/Portfolio/palette.png' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/aliss/AppData/Local/Temp/KritaFFmpegProgress.yxBVdE.
+[file @ 000002947991dc40] Setting default whitelist 'file,crypto,data'
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url D:/Desktop/Portfolio/Portfolio/tourner%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 14.
+Successfully parsed a group of options.
+Opening an input file: D:/Desktop/Portfolio/Portfolio/tourner%04d.png.
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0000.png' for reading
+[file @ 0000029479961e80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002947996a040] Statistics: 194556 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0001.png' for reading
+[file @ 0000029479968580] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479968700] Statistics: 197896 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0002.png' for reading
+[file @ 0000029479968640] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479968940] Statistics: 192620 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0003.png' for reading
+[file @ 0000029479968640] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479968b00] Statistics: 197048 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0004.png' for reading
+[file @ 0000029479968640] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479968cc0] Statistics: 197832 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0005.png' for reading
+[file @ 0000029479968640] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479968e80] Statistics: 196435 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0006.png' for reading
+[file @ 0000029479968640] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479969040] Statistics: 194133 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0007.png' for reading
+[file @ 0000029479968640] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479969200] Statistics: 197025 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0008.png' for reading
+[file @ 0000029479968640] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479969bc0] Statistics: 198315 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0009.png' for reading
+[file @ 0000029479969bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479969c80] Statistics: 192936 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0010.png' for reading
+[file @ 0000029479969bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479969c80] Statistics: 192742 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0011.png' for reading
+[file @ 0000029479969bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479969c80] Statistics: 191834 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0012.png' for reading
+[file @ 0000029479969bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479969c80] Statistics: 195304 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0013.png' for reading
+[file @ 0000029479969bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479969c80] Statistics: 192336 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0014.png' for reading
+[file @ 0000029479969bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479969c80] Statistics: 197415 bytes read, 0 seeks
+[image2 @ 000002947995e800] Opening 'D:/Desktop/Portfolio/Portfolio/tourner0015.png' for reading
+[file @ 0000029479969bc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000029479969c80] Statistics: 195895 bytes read, 0 seeks
+Input #0, image2, from 'D:/Desktop/Portfolio/Portfolio/tourner%04d.png':
+  Duration: 00:00:00.64, start: 0.000000, bitrate: N/A
+    Stream #0:0, 16, 1/25: Video: png, 1 reference frame, rgba(pc), 1280x1280 [SAR 2834:2834 DAR 1:1], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url D:/Desktop/Portfolio/Portfolio/palette.png.
+Applying option vf (set video filters) with argument palettegen.
+Successfully parsed a group of options.
+Opening an output file: D:/Desktop/Portfolio/Portfolio/palette.png.
+Successfully opened the file.
+detected 8 logical cores
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> png (native))
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 8 times
+[graph 0 input from stream 0:0 @ 00000294799688c0] Setting 'video_size' to value '1280x1280'
+[graph 0 input from stream 0:0 @ 00000294799688c0] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 00000294799688c0] Setting 'time_base' to value '1/14'
+[graph 0 input from stream 0:0 @ 00000294799688c0] Setting 'pixel_aspect' to value '2834/2834'
+[graph 0 input from stream 0:0 @ 00000294799688c0] Setting 'frame_rate' to value '14/1'
+[graph 0 input from stream 0:0 @ 00000294799688c0] w:1280 h:1280 pixfmt:rgba tb:1/14 fr:14/1 sar:2834/2834
+[format @ 0000029479968f80] Setting 'pix_fmts' to value 'rgb24|rgba|rgb48be|rgba64be|pal8|gray|ya8|gray16be|ya16be|monob'
+[auto_scaler_0 @ 000002947a7a2400] Setting 'flags' to value 'bicubic'
+[auto_scaler_0 @ 000002947a7a2400] w:iw h:ih flags:'bicubic' interl:0
+[Parsed_palettegen_0 @ 0000029478137800] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_palettegen_0'
+[auto_scaler_1 @ 000002947a7a3900] Setting 'flags' to value 'bicubic'
+[auto_scaler_1 @ 000002947a7a3900] w:iw h:ih flags:'bicubic' interl:0
+[format @ 0000029479968f80] auto-inserting filter 'auto_scaler_1' between the filter 'Parsed_palettegen_0' and the filter 'format'
+[AVFilterGraph @ 00000294799d5380] query_formats: 4 queried, 1 merged, 2 already done, 0 delayed
+[auto_scaler_1 @ 000002947a7a3900] picking rgba out of 10 ref:bgra alpha:1
+[swscaler @ 000002947a7a9000] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 000002947a7a2400] w:1280 h:1280 fmt:rgba sar:2834/2834 -> w:1280 h:1280 fmt:bgra sar:1/1 flags:0x4
+[swscaler @ 000002947a7de000] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 000002947a7a3900] w:16 h:16 fmt:bgra sar:1/1 -> w:16 h:16 fmt:rgba sar:1/1 flags:0x4
+Output #0, image2, to 'D:/Desktop/Portfolio/Portfolio/palette.png':
+  Metadata:
+    encoder         : Lavf58.45.100
+    Stream #0:0, 0, 1/14: Video: png, 1 reference frame, rgba, 16x16 [SAR 1:1 DAR 1:1], 0/1, q=2-31, 200 kb/s, 14 fps, 14 tbn, 14 tbc
+    Metadata:
+      encoder         : Lavc58.91.100 png
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 15 times
+[Parsed_palettegen_0 @ 0000029478137800] 255(+1) colors generated out of 10798 colors; ratio=0.023615
+[Parsed_palettegen_0 @ 0000029478137800] Dupped color: FF050720
+[Parsed_palettegen_0 @ 0000029478137800] Dupped color: FF060821
+[Parsed_palettegen_0 @ 0000029478137800] Dupped color: FF07080F
+[Parsed_palettegen_0 @ 0000029478137800] Dupped color: FF08080E
+[Parsed_palettegen_0 @ 0000029478137800] Dupped color: FF0A0B11
+[Parsed_palettegen_0 @ 0000029478137800] Dupped color: FF101014
+[Parsed_palettegen_0 @ 0000029478137800] Dupped color: FF1C1C1B
+[Parsed_palettegen_0 @ 0000029478137800] Dupped color: FF8E8A73
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+Clipping frame in rate conversion by 0.000008
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[out_0_0 @ 0000029479969140] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+[image2 @ 0000029479960ec0] Opening 'D:/Desktop/Portfolio/Portfolio/palette.png' for writing
+[file @ 000002947a5f2d80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002947a6f4180] Statistics: 0 seeks, 1 writeouts
+frame=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.07 bitrate=N/A speed=0.237x    
+[AVIOContext @ 000002947995e680] Statistics: 0 seeks, 1 writeouts
+video:1kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (D:/Desktop/Portfolio/Portfolio/tourner%04d.png):
+  Input stream #0:0 (video): 16 packets read (3124322 bytes); 16 frames decoded; 
+  Total: 16 packets (3124322 bytes) demuxed
+Output file #0 (D:/Desktop/Portfolio/Portfolio/palette.png):
+  Output stream #0:0 (video): 1 frames encoded; 1 packets muxed (869 bytes); 
+  Total: 1 packets (869 bytes) muxed
+16 frames successfully decoded, 0 decoding errors

@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>A.L</title>
+</head>
+
+<body>
+
+		<div class="row no-gutters">
+
+			<div class="col-md-6 no-gutters">
+			<div class="leftSide">
+
+	<img class="logo" src="logo.png" alt="Logo Alisar LAIKA">
+    <h2>PORTFOLIO</h2>
+				<ul class="listMenu">
+			<li><div class="etudes">
+				<div class="projetEtudiant" onclick="myFunction()">PROJETS ETUDIANT</div>
+				<div class="etudesContenus" id="myPopup">
+					<a href="fanzine.html">FANZINE</a>
+					<a href="feedme.html">SITE FEED ME</a>
+					<a href="colorisation.html"> COLORISATION </a>
+					<a href="flyer.html"> FLYER </a>
+			</div>
+		</div></li>
+			<li><a class="Digital" href="digital.html">DIGITAL ART</a></li>
+			<li><a class="animation" href="animation.html">ANIMATION</a></li>
+			<li><div class="aPropos"> 
+				<div class="aPropos2" onclick="myFunction2()">A PROPOS</div>
+				<div class="aProposContenu" id="myPopup2">
+					<p>Venue en France à 18 ans pour continuer mes études, je me retrouve désormais en troisème année en licence Etudes Visuelles, Multimédias et Arts Numériques à l'Université Gustave Eiffel. Ma licence m'a permis d'avoir une pluridisciplinarité dans plusieurs domaines. Elle m'a également permis d'acquérir un savoir sur l'histoire de l'art et l'analyse de l'image qui me sont utiles dans la conception de mes projets. Je retrouve un intérêt particulier pour ce qui est de la 3D et l'animation que ce soit en frame par frame ou bien à l'aide du rigging d'un personnage et son animation sur MAYA. Je retrouve une certaine liberté dans la suite Adobe qui m'a permis de faire divers projets tels que un fanzine qui me tenait à coeur, des dessins, des animations en frame par frame ou bien des flyers. Le codage est un autre domaine qui m'intéresse ayant des compétences en HTML/CSS ainsi que en C# sur l'application Unity.
+					J'espère pouvoir redoubler d'effort afin de travailler dans le domaine de la 3D, de l'animation ou bien du design graphique.
+					</p></div></li>
+			</ul>
+		</div>
+				</div>
+
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var etudes = document.getElementById("myPopup");
+  etudes.classList.toggle("show");
+}
+function myFunction2() {
+  var aPropos = document.getElementById("myPopup2");
+  aPropos.classList.toggle("show2");
+}
+</script>
+
+
+		<div class="col-md-6 no-gutters">
+
+    		<h1>ALISSAR LAIKA</h1>
+		<div class="rightSide"></div>
+
+			</div>
+
+			</div>
+</body>
+</html>
+
